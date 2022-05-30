@@ -8,8 +8,6 @@ const initialState = {
 
 // arguments are = prev_State & new_State
 export default function movieReducer(state = initialState, action) {
-  console.log("REDUCER", state, action);
-
   if (action.type === "ADD_MOVIE") {
     return {
       ...state,

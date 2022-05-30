@@ -3,7 +3,6 @@ import MovieCard from "./MovieCard";
 import { useDispatch, useSelector } from "react-redux";
 
 function App() {
-  console.log("APP");
   const dispatch = useDispatch();
   const list = useSelector((state) => state.movie.list);
   const favourite = useSelector((state) => state.movie.favourite);
@@ -19,7 +18,6 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {console.log("RENDER")}
       <div className="main">
         <div className="tabs">
           <div

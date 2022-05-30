@@ -53,7 +53,6 @@ export default function Navbar() {
                 <span>{searchResult.Title}</span>
                 <button
                   onClick={() => {
-                    // console.log(typeof searchResult);
                     dispatch({
                       type: "ADD_MOVIE_LIST",
                       payload: searchResult,
